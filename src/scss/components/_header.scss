@@ -7,6 +7,10 @@
 		align-items: center;
 	}
 
+	&__content {
+		background-color: red;
+	}
+
 	&__btn {
 		color: var(--white-color);
 		text-transform: uppercase;
