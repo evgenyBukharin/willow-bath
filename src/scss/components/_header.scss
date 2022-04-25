@@ -1,14 +1,17 @@
 .header {
 	padding: 21px 0;
 	background: var(--white-color);
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__content {
-		background-color: red;
+		margin: unset;
+		width: var(--container-width);
 	}
 
 	&__btn {
