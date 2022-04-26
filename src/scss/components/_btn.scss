@@ -1,0 +1,16 @@
+.btn {
+	&__container {
+		width: fit-content;
+	}
+
+	&__primary {
+		color: var(--white-color);
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		padding: 12px 25px;
+		background-color: var(--black-color);
+		border-radius: 4px;
+	}
+}

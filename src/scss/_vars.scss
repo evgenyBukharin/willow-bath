@@ -1,5 +1,3 @@
-// если вы хотите использовать sass-переменные - удалите root
-// colors
 :root {
 	// base
 	--font-family: "SourceSansPro", sans-serif;
@@ -13,6 +11,12 @@
 	--bigger-container-offset: 30px;
 	--bigger-container-width: calc(
 		var(--bigger-content-width) + (var(--bigger-container-offset) * 2)
+	);
+
+	--smaller-content-width: 1160px;
+	--smaller-container-offset: 4px;
+	--smaller-container-width: calc(
+		var(--smaller-content-width) + (var(--smaller-container-offset) * 2)
 	);
 
 	// colors

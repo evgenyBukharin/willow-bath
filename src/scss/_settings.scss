@@ -89,6 +89,12 @@ a {
 		padding: 0 var(--bigger-container-offset);
 		max-width: var(--bigger-container-width);
 	}
+
+	&-smaller {
+		margin: 0 auto;
+		padding: 0 var(--smaller-container-offset);
+		max-width: var(--smaller-container-width);
+	}
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
