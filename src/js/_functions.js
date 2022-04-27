@@ -54,12 +54,15 @@ import Swiper, { Pagination, Autoplay } from "swiper";
 Swiper.use([Pagination, Autoplay]);
 const swiper = new Swiper(".swiper", {
 	slidesPerView: "auto",
+	grabCursor: true,
+	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
 		type: "bullets",
 		clickable: true,
-		bulletClass: "swiper__bullet",
-		bulletActiveClass: "swiper__bullet-active",
+		renderBullet: function (index, className) {
+			return `<span class="swiper-pagination-bullet swiper__bullet"></span>`;
+		},
 	},
 	autoplay: {
 		delay: 5000,

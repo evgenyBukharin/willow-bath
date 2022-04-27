@@ -1,7 +1,27 @@
 .swiper {
+	padding-bottom: 100px;
+	&-pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&__bullet {
 		background-color: var(--black-color);
-		&-active {
+		padding: 2.5px;
+		margin-right: 16px !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-pagination-bullet-active {
+		&::after {
+			content: "";
+			padding: 8px;
+			background-color: transparent;
+			border-radius: 50%;
+			border: 1px solid var(--black-color);
 		}
 	}
 }
