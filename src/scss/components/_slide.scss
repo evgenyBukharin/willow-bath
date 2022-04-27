@@ -4,12 +4,12 @@
 	justify-content: space-between;
 
 	&__info {
+		max-width: 40%;
 		display: flex;
 		flex-direction: column;
 	}
 
 	&__prices {
-		width: fit-content;
 		display: flex;
 		margin-bottom: 50px;
 	}
@@ -40,11 +40,9 @@
 		font-size: 36px;
 		line-height: 120%;
 		margin-bottom: 18px;
-		max-width: 60%;
 	}
 
 	&__text {
-		width: fit-content;
 		margin: 0;
 		color: var(--black-color);
 		font-weight: 300;

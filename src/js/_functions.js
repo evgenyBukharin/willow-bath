@@ -50,10 +50,20 @@ console.log(mobileCheck());
 // });
 
 // Подключение свайпера
-import Swiper, { Navigation, Pagination } from "swiper";
-Swiper.use([Navigation, Pagination]);
-const swiper = new Swiper(el, {
+import Swiper, { Pagination, Autoplay } from "swiper";
+Swiper.use([Pagination, Autoplay]);
+const swiper = new Swiper(".swiper", {
 	slidesPerView: "auto",
+	pagination: {
+		el: ".swiper-pagination",
+		type: "bullets",
+		clickable: true,
+		bulletClass: "swiper__bullet",
+		bulletActiveClass: "swiper__bullet-active",
+	},
+	autoplay: {
+		delay: 5000,
+	},
 });
 
 // Подключение анимаций по скроллу
