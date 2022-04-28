@@ -1,0 +1,27 @@
+.advantages {
+	&__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 100px;
+		padding-top: 150px;
+		padding-bottom: 100px;
+	}
+	&__item {
+		grid-column: 3 span;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 150%;
+		color: var(--darker-grey-color);
+		margin-top: 12px;
+		margin-bottom: 8px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: var(--grey-color);
+	}
+}
