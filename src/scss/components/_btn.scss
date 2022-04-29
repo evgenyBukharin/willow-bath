@@ -9,4 +9,21 @@
 		background-color: var(--black-color);
 		border-radius: 4px;
 	}
+	&__secondary {
+		padding: 18px;
+		background-color: var(--secondary-color);
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		min-width: fit-content;
+	}
+	&__text {
+		&-secondary {
+			color: var(--black-color);
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 120%;
+			margin-right: 27px;
+		}
+	}
 }
