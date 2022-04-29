@@ -52,7 +52,8 @@ console.log(mobileCheck());
 // Подключение свайпера
 import Swiper, { Pagination, Autoplay } from "swiper";
 Swiper.use([Pagination, Autoplay]);
-const swiper = new Swiper(".swiper", {
+const swiper1 = new Swiper(".swiper-1", {
+	speed: 800,
 	slidesPerView: "auto",
 	grabCursor: true,
 	loop: true,
@@ -67,9 +68,16 @@ const swiper = new Swiper(".swiper", {
 	autoplay: {
 		delay: 5000,
 		disableOnInteraction: false,
-		pauseOnMouseEnter: true,
 	},
 });
+
+// const swiper2 = new Swiper(".swiper-2", {
+// 	loop: true,
+// 	autoplay: {
+// 		delay: 1000,
+// 		disableOnInteraction: false,
+// 	},
+// });
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

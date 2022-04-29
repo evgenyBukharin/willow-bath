@@ -1,57 +1,56 @@
 .slide {
-	display: flex;
-	align-items: center;
-
-	&__info {
-		max-width: 45%;
+	&-1 {
 		display: flex;
-		flex-direction: column;
-		margin-left: 260px;
-	}
+		align-items: center;
 
-	&__prices {
-		display: flex;
-		margin-bottom: 50px;
-	}
+		&__info {
+			max-width: 45%;
+			display: flex;
+			flex-direction: column;
+			margin-left: 260px;
+		}
 
-	&__price {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 120%;
-		color: var(--black-color);
+		&__prices {
+			display: flex;
+			margin-bottom: 50px;
+		}
 
-		&-old {
+		&__price {
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 120%;
-			text-decoration-line: line-through;
-			color: var(--grey-color);
+			color: var(--black-color);
+
+			&-old {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 120%;
+				text-decoration-line: line-through;
+				color: var(--grey-color);
+				margin-right: 12px;
+			}
 		}
 
-		&:not(:last-child) {
-			margin-right: 12px;
+		&__title {
+			margin: 0;
+			color: var(--black-color);
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 120%;
+			margin-bottom: 18px;
 		}
-	}
 
-	&__title {
-		margin: 0;
-		color: var(--black-color);
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 120%;
-		margin-bottom: 18px;
-	}
+		&__text {
+			margin: 0;
+			color: var(--black-color);
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 120%;
+			margin-bottom: 50px;
+		}
 
-	&__text {
-		margin: 0;
-		color: var(--black-color);
-		font-weight: 300;
-		font-size: 14px;
-		line-height: 120%;
-		margin-bottom: 50px;
-	}
-
-	&__pagination {
-		bottom: 32px !important;
+		&__pagination {
+			bottom: 32px !important;
+		}
 	}
 }
