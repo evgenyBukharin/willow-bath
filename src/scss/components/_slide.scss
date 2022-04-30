@@ -1,27 +1,41 @@
 .slide {
-	&-1 {
+	&-hero {
 		display: flex;
 		align-items: center;
+	}
 
-		&__info {
+	&-reviews {
+		width: 33%;
+		padding: 30px;
+		background-color: var(--white-color);
+	}
+
+	&__info {
+		&-hero {
 			max-width: 45%;
 			display: flex;
 			flex-direction: column;
 			margin-left: 260px;
 		}
+	}
 
-		&__prices {
+	&__prices {
+		&-hero {
 			display: flex;
 			margin-bottom: 50px;
 		}
+	}
 
-		&__price {
+	&__price {
+		&-hero {
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 120%;
 			color: var(--black-color);
+		}
 
-			&-old {
+		&-old {
+			&-hero {
 				font-weight: 400;
 				font-size: 16px;
 				line-height: 120%;
@@ -30,8 +44,10 @@
 				margin-right: 12px;
 			}
 		}
+	}
 
-		&__title {
+	&__title {
+		&-hero {
 			margin: 0;
 			color: var(--black-color);
 			font-weight: 700;
@@ -39,8 +55,10 @@
 			line-height: 120%;
 			margin-bottom: 18px;
 		}
+	}
 
-		&__text {
+	&__text {
+		&-hero {
 			margin: 0;
 			color: var(--black-color);
 			font-weight: 300;
@@ -48,9 +66,16 @@
 			line-height: 120%;
 			margin-bottom: 50px;
 		}
+	}
 
-		&__pagination {
+	&__pagination {
+		&-hero {
 			bottom: 32px !important;
 		}
+	}
+
+	&__image {
+		width: 80px;
+		height: 80px;
 	}
 }

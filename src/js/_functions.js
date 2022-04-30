@@ -52,9 +52,8 @@ console.log(mobileCheck());
 // Подключение свайпера
 import Swiper, { Pagination, Autoplay } from "swiper";
 Swiper.use([Pagination, Autoplay]);
-const swiper1 = new Swiper(".swiper-1", {
+const swiper1 = new Swiper(".swiper-hero", {
 	speed: 800,
-	slidesPerView: "auto",
 	grabCursor: true,
 	loop: true,
 	pagination: {
@@ -71,7 +70,8 @@ const swiper1 = new Swiper(".swiper-1", {
 	},
 });
 
-// const swiper2 = new Swiper(".swiper-2", {
+// const swiper2 = new Swiper(".swiper-reviews", {
+// slidesPerView: "2",
 // 	loop: true,
 // 	autoplay: {
 // 		delay: 1000,
