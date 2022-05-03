@@ -70,14 +70,17 @@ const swiper1 = new Swiper(".swiper-hero", {
 	},
 });
 
-// const swiper2 = new Swiper(".swiper-reviews", {
-// slidesPerView: "2",
-// 	loop: true,
-// 	autoplay: {
-// 		delay: 1000,
-// 		disableOnInteraction: false,
-// 	},
-// });
+const swiper2 = new Swiper(".swiper-reviews", {
+	slidesPerView: "3",
+	pagination: {
+		el: ".swiper-pagination-reviews",
+		type: "bullets",
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `<span class="swiper-pagination-bullet swiper__bullet slide__bullet-reviews"></span>`;
+		},
+	},
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
