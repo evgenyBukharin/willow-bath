@@ -1,0 +1,33 @@
+.colors {
+	&__list {
+		display: flex;
+		position: relative;
+	}
+	&__item {
+		display: flex;
+	}
+	&__ellipse {
+		z-index: 1000;
+		width: 25px;
+		height: 25px;
+		stroke: var(--white-color);
+		&-red {
+			fill: var(--red-color);
+		}
+		&-yellow {
+			fill: var(--yellow-color);
+			margin-left: -6px;
+		}
+		&-blue {
+			fill: var(--blue-color);
+			margin-left: -9px;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 120%;
+		color: var(--black-color);
+		margin-left: 12px;
+	}
+}

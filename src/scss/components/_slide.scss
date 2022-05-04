@@ -91,7 +91,11 @@
 		}
 		&-reviews {
 			position: absolute;
+			left: unset !important;
 			top: 8px;
+			right: 0;
+			width: fit-content !important;
+			height: fit-content;
 			align-items: flex-start !important;
 			justify-content: flex-end !important;
 		}
