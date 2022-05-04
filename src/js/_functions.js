@@ -70,7 +70,7 @@ const swiper1 = new Swiper(".swiper-hero", {
 	},
 });
 
-const swiper2 = new Swiper(".swiper-reviews", {
+const swiper2 = new Swiper(".reviews__swiper", {
 	slidesPerView: "3",
 	pagination: {
 		el: ".swiper-pagination-reviews",
