@@ -1,7 +1,29 @@
 .reviews {
+	padding-top: 100px;
+	padding-bottom: 50px;
 	&__swiper {
 		padding-bottom: 0;
 	}
-	padding-top: 100px;
-	padding-bottom: 50px;
+	&__btn {
+		padding: 19px 22px;
+		background: rgba(255, 255, 255, 0.72);
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+		&-left {
+			margin-right: 12px;
+		}
+		&-disabled > .reviews__arrow {
+			fill: var(--grey-color);
+		}
+	}
+	&__arrow {
+		fill: none;
+		stroke: var(--black-color);
+		width: 6px;
+		height: 12px;
+		&-left {
+			transform: rotate(180deg);
+		}
+	}
 }
