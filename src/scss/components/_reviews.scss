@@ -4,17 +4,24 @@
 	&__swiper {
 		padding-bottom: 0;
 	}
+	&__navigation {
+		position: absolute;
+		top: 0;
+		left: 340px;
+	}
 	&__btn {
 		padding: 19px 22px;
 		background: rgba(255, 255, 255, 0.72);
 		border-radius: 4px;
 		border: none;
 		cursor: pointer;
+		transition: all 0.2s ease;
 		&-left {
 			margin-right: 12px;
 		}
 		&-disabled > .reviews__arrow {
-			fill: var(--grey-color);
+			transition: all 0.2s ease;
+			stroke: var(--grey-color);
 		}
 	}
 	&__arrow {
@@ -22,6 +29,7 @@
 		stroke: var(--black-color);
 		width: 6px;
 		height: 12px;
+		transition: all 0.2s ease;
 		&-left {
 			transform: rotate(180deg);
 		}

@@ -50,8 +50,8 @@ console.log(mobileCheck());
 // });
 
 // Подключение свайпера
-import Swiper, { Pagination, Autoplay } from "swiper";
-Swiper.use([Pagination, Autoplay]);
+import Swiper, { Pagination, Autoplay, Navigation } from "swiper";
+Swiper.use([Pagination, Autoplay, Navigation]);
 const swiper1 = new Swiper(".swiper-hero", {
 	speed: 800,
 	grabCursor: true,
@@ -75,7 +75,7 @@ const swiper2 = new Swiper(".reviews__swiper", {
 	navigation: {
 		nextEl: ".swiper-button-next-reviews",
 		prevEl: ".swiper-button-prev-reviews",
-		lockClass: ".reviews__btn-disabled",
+		disabledClass: "reviews__btn-disabled",
 	},
 	pagination: {
 		el: ".swiper-pagination-reviews",
