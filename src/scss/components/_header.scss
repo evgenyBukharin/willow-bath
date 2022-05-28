@@ -11,4 +11,8 @@
 		margin: unset;
 		width: var(--container-width);
 	}
+
+	&__button {
+		white-space: nowrap;
+	}
 }

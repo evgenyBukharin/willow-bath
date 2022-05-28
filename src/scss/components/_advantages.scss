@@ -25,3 +25,19 @@
 		color: var(--grey-color);
 	}
 }
+
+@media (max-width: 1024px) {
+	.advantages {
+		&__list {
+			gap: 50px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.advantages {
+		&__list {
+			gap: 16px;
+		}
+	}
+}

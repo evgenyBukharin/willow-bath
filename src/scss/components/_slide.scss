@@ -138,3 +138,34 @@
 		}
 	}
 }
+
+@media (max-width: 1024px) {
+	.slide {
+		&__info {
+			&-hero {
+				margin-left: 80px;
+			}
+		}
+		&-reviews {
+			max-width: 400px;
+		}
+		&__image {
+			&-hero {
+				max-width: 40%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.slide {
+		&__image {
+			&-hero {
+				max-width: 40%;
+			}
+		}
+		&-reviews {
+			max-width: 100%;
+		}
+	}
+}

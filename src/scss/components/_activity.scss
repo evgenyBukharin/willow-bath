@@ -4,8 +4,15 @@
 	}
 
 	&__item {
+		height: 20px;
+		min-height: 20px;
 		&:not(:last-child) {
 			margin-right: 15px;
 		}
+	}
+
+	&__image {
+		min-height: 20px;
+		min-width: 20px;
 	}
 }
