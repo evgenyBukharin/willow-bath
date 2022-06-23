@@ -1,0 +1,21 @@
+.burger {
+	@include burger;
+	--burger-height: 22px;
+	&--active {
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: var(--burger-line-height);
+			background-color: white;
+			transition: top 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+			transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+		}
+		& .burger__line {
+			transform: scale(0);
+			transition: transform 0s ease-in-out;
+		}
+	}
+}

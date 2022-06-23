@@ -46,6 +46,9 @@
 			}
 		}
 	}
+	&__burger {
+		display: none;
+	}
 }
 
 @media (max-width: 1440px) {
@@ -80,6 +83,28 @@
 					margin-right: 10px;
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.nav {
+		padding-left: 62px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 0;
+		&__list {
+			// временно (перенсти в открывающееся меню)
+			display: none;
+		}
+		&__logo {
+			margin: 0;
+			// margin-left: auto;
+		}
+		&__burger {
+			display: block;
+			z-index: 1000;
 		}
 	}
 }

@@ -91,3 +91,21 @@
 		align-items: center;
 	}
 }
+
+@media (max-width: 768px) {
+	.products {
+		&__list {
+			margin-top: 35px;
+		}
+		&__container {
+			padding-top: 35px;
+			padding-bottom: 20px;
+		}
+		&__item {
+			grid-column: 6 span;
+		}
+		&__img {
+			width: 100%;
+		}
+	}
+}

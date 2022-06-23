@@ -165,7 +165,13 @@
 			}
 		}
 		&-reviews {
-			max-width: 100%;
+			max-width: 688px;
+			margin-right: -14px;
+		}
+		&__pagination {
+			&-reviews {
+				top: 24px;
+			}
 		}
 	}
 }

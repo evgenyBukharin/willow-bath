@@ -30,14 +30,20 @@
 	.advantages {
 		&__list {
 			gap: 50px;
+			padding-top: 100px;
+			padding-bottom: 50px;
 		}
 	}
 }
 
 @media (max-width: 768px) {
 	.advantages {
+		&__item {
+			grid-column: 6 span;
+		}
 		&__list {
-			gap: 16px;
+			gap: 40px;
+			padding: 30px;
 		}
 	}
 }

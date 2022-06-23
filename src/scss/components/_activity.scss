@@ -16,3 +16,12 @@
 		min-width: 20px;
 	}
 }
+
+@media (max-width: 425px) {
+	.activity {
+		&__list {
+			// временно (перенсти в открывающееся меню)
+			display: none;
+		}
+	}
+}
