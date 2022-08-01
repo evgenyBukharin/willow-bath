@@ -165,21 +165,48 @@
 			}
 		}
 		&-reviews {
-<<<<<<< HEAD
-			max-width: 688px;
-			margin-right: -14px;
-		}
-		&__pagination {
-			&-reviews {
-				top: 24px;
-=======
 			max-width: 605px;
 			margin-left: 32px;
 		}
 		&__pagination {
 			&-reviews {
 				top: 23px;
->>>>>>> 675e499f9b36b0aa6fc575fbfe11fd8e6c493819
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.slide {
+		&-hero {
+			display: flex;
+			flex-direction: column;
+		}
+		&__info {
+			&-hero {
+				margin-left: 0;
+				max-width: 85%;
+			}
+		}
+		&__prices {
+			&-hero {
+				margin-bottom: 8px;
+			}
+		}
+		&__image {
+			&-hero {
+				max-width: 60%;
+				margin-bottom: 12px;
+			}
+		}
+		&__text {
+			&-hero {
+				margin-bottom: 18px;
+			}
+		}
+		&__title {
+			&-hero {
+				margin-bottom: 8px;
 			}
 		}
 	}

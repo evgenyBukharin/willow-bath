@@ -20,8 +20,26 @@
 @media (max-width: 425px) {
 	.activity {
 		&__list {
-			// временно (перенсти в открывающееся меню)
 			display: none;
+			&-menu {
+				display: flex;
+			}
+		}
+		&__icon {
+			width: 40px;
+			height: 40px;
+			fill: var(--white-color);
+			&-heart {
+				stroke: none;
+			}
+			&-bag {
+				fill: none;
+				stroke: var(--white-color);
+			}
+			&-search {
+				fill: none;
+				stroke: var(--white-color);
+			}
 		}
 	}
 }

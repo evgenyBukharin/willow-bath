@@ -2,3 +2,9 @@
 	background-color: var(--white-color);
 	padding-top: 70px;
 }
+
+@media (max-width: 425px) {
+	.hero {
+		padding-top: 50px;
+	}
+}
