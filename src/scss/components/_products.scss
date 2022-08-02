@@ -110,3 +110,11 @@
 		}
 	}
 }
+
+@media (max-width: 425px) {
+	.products {
+		&__item {
+			grid-column: 12 span;
+		}
+	}
+}

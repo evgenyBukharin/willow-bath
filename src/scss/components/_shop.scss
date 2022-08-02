@@ -28,5 +28,8 @@
 		&__title {
 			padding: 50px 0;
 		}
+		&__item {
+			grid-column: 6 span;
+		}
 	}
 }
