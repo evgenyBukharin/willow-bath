@@ -182,6 +182,11 @@
 			display: flex;
 			flex-direction: column;
 		}
+		&-reviews {
+			max-width: 335px;
+			margin-left: 0;
+			margin-right: 0;
+		}
 		&__info {
 			&-hero {
 				margin-left: 0;
@@ -207,6 +212,33 @@
 		&__title {
 			&-hero {
 				margin-bottom: 8px;
+			}
+		}
+		&__pagination {
+			&-reviews {
+				top: 78px;
+			}
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.slide {
+		&-reviews {
+			max-width: 286px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.slide {
+		&-reviews {
+			max-width: 238px;
+			padding: 26px;
+		}
+		&__info {
+			&-top {
+				flex-wrap: wrap;
 			}
 		}
 	}

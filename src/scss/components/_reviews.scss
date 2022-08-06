@@ -41,3 +41,31 @@
 		padding-top: 50px;
 	}
 }
+
+@media (max-width: 425px) {
+	.reviews {
+		&__navigation {
+			left: 279px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.reviews {
+		&__navigation {
+			left: 220px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.reviews {
+		&__btn {
+			padding: 13px 16px;
+		}
+		&__navigation {
+			left: 198px;
+			top: 10px;
+		}
+	}
+}

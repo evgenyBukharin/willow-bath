@@ -95,16 +95,28 @@
 		justify-content: space-between;
 		gap: 0;
 		&__list {
-			// временно (перенсти в открывающееся меню)
 			display: none;
 		}
 		&__logo {
 			margin: 0;
-			// margin-left: auto;
 		}
 		&__burger {
 			display: block;
 			z-index: 1000;
+		}
+	}
+}
+@media (max-width: 375px) {
+	.nav {
+		padding-left: 35px;
+	}
+}
+
+@media (max-width: 320px) {
+	.nav {
+		padding-left: 100px;
+		&__logo {
+			display: none;
 		}
 	}
 }

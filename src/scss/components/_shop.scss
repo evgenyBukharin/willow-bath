@@ -33,3 +33,9 @@
 		}
 	}
 }
+
+@media (max-width: 320px) {
+	.shop__item {
+		grid-column: 12 span;
+	}
+}

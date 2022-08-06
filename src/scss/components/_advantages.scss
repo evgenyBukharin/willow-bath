@@ -60,3 +60,18 @@
 		}
 	}
 }
+
+@media (max-width: 375px) {
+	.advantages {
+		&__list {
+			gap: 24px;
+			padding: 15px 0;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.advantages__item {
+		grid-column: 12 span;
+	}
+}
