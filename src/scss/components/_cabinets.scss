@@ -1,0 +1,10 @@
+.cabinets {
+	min-height: 520px;
+	background-color: var(--black-color);
+	&__container {
+		padding-top: 110px;
+	}
+	&__title {
+		color: var(--white-color);
+	}
+}
