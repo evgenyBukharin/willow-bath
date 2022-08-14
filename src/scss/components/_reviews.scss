@@ -5,9 +5,8 @@
 		padding-bottom: 0;
 	}
 	&__navigation {
-		position: absolute;
-		top: 0;
-		left: 340px;
+		display: flex;
+		margin-left: 12px;
 	}
 	&__btn {
 		padding: 19px 22px;

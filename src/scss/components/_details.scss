@@ -1,0 +1,36 @@
+.details {
+	background: var(--details-container-grey);
+	padding: 50px 0;
+	&__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		column-gap: 123px;
+	}
+	&__item {
+		grid-column: 3 span;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__icon {
+		margin-bottom: 20px;
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 150%;
+		text-align: center;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	&__text {
+		color: var(--grey-color);
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 150%;
+		text-align: center;
+		margin-top: 0;
+	}
+}

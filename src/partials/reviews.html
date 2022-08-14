@@ -1,22 +1,29 @@
 <section class="reviews">
 	<div class="container">
 		<div class="swiper reviews__swiper">
-			<h2 class="title__primary">Reviews</h2>
-			<div class="reviews__navigation">
-				<button
-					class="reviews__btn reviews__btn-left swiper-button-prev-reviews"
-				>
-					<svg class="reviews__arrow reviews__arrow-left">
-						<use xlink:href="img/sprite.svg#arrow"></use>
-					</svg>
-				</button>
-				<button class="reviews__btn swiper-button-next-reviews">
-					<svg class="reviews__arrow reviews__arrow-right">
-						<use xlink:href="img/sprite.svg#arrow"></use>
-					</svg>
-				</button>
+			<div class="slide__control">
+				<div class="slide__control-inner">
+					<h2 class="title__primary">Reviews</h2>
+					<div class="reviews__navigation">
+						<button
+							class="reviews__btn reviews__btn-left swiper-button-prev-reviews"
+						>
+							<svg class="reviews__arrow reviews__arrow-left">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</button>
+						<button class="reviews__btn swiper-button-next-reviews">
+							<svg class="reviews__arrow reviews__arrow-right">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div
+					class="swiper-pagination swiper-pagination-reviews slide__pagination-reviews"
+				></div>
 			</div>
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper slide__wrapper-reviews">
 				<div class="swiper-slide slide-reviews">
 					<div class="slide__header">
 						<img
@@ -107,14 +114,6 @@
 										height="18"
 										alt="Изображение звезды"
 									/>
-									<img
-										loading="lazy"
-										src="./img/star.svg"
-										class="image"
-										width="18"
-										height="18"
-										alt="Изображение звезды"
-									/>
 								</div>
 								<div class="slide__date">Jan 27, 2022</div>
 							</div>
@@ -139,30 +138,6 @@
 						<div class="slide__info-reviews">
 							<div class="slide__info-top">
 								<div class="slide__stars">
-									<img
-										loading="lazy"
-										src="./img/star.svg"
-										class="image"
-										width="18"
-										height="18"
-										alt="Изображение звезды"
-									/>
-									<img
-										loading="lazy"
-										src="./img/star.svg"
-										class="image"
-										width="18"
-										height="18"
-										alt="Изображение звезды"
-									/>
-									<img
-										loading="lazy"
-										src="./img/star.svg"
-										class="image"
-										width="18"
-										height="18"
-										alt="Изображение звезды"
-									/>
 									<img
 										loading="lazy"
 										src="./img/star.svg"
@@ -283,14 +258,6 @@
 										height="18"
 										alt="Изображение звезды"
 									/>
-									<img
-										loading="lazy"
-										src="./img/star.svg"
-										class="image"
-										width="18"
-										height="18"
-										alt="Изображение звезды"
-									/>
 								</div>
 								<div class="slide__date">Jan 27, 2022</div>
 							</div>
@@ -347,14 +314,6 @@
 										height="18"
 										alt="Изображение звезды"
 									/>
-									<img
-										loading="lazy"
-										src="./img/star.svg"
-										class="image"
-										width="18"
-										height="18"
-										alt="Изображение звезды"
-									/>
 								</div>
 								<div class="slide__date">Jan 27, 2022</div>
 							</div>
@@ -370,9 +329,6 @@
 					</p>
 				</div>
 			</div>
-			<div
-				class="swiper-pagination swiper-pagination-reviews slide__pagination-reviews"
-			></div>
 		</div>
 	</div>
 </section>
