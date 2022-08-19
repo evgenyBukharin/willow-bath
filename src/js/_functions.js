@@ -51,6 +51,7 @@ import { burger } from "./functions/burger";
 
 // Подключение свайпера
 import Swiper, { Pagination, Autoplay, Navigation } from "swiper";
+import { auto } from "@popperjs/core";
 Swiper.use([Pagination, Autoplay, Navigation]);
 const swiper1 = new Swiper(".swiper-hero", {
 	speed: 800,
@@ -74,6 +75,7 @@ const swiper2 = new Swiper(".reviews__swiper", {
 	breakpoints: {
 		1025: {
 			slidesPerView: 3,
+			spaceBetween: 30,
 		},
 		769: {
 			slidesPerView: 2,
@@ -92,7 +94,7 @@ const swiper2 = new Swiper(".reviews__swiper", {
 		type: "bullets",
 		clickable: true,
 		renderBullet: function (index, className) {
-			return `<span class="swiper-pagination-bullet swiper__bullet slide__bullet-reviews"></span>`;
+			return `<span class="swiper-pagination-bullet swiper__bullet"></span>`;
 		},
 	},
 });
