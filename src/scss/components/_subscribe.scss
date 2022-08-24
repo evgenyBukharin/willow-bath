@@ -70,3 +70,22 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.subscribe {
+		&__title {
+			text-align: center;
+		}
+		&__input {
+			width: 70%;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.subscribe {
+		&__container {
+			padding-top: 44px;
+		}
+	}
+}

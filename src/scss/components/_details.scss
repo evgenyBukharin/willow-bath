@@ -35,3 +35,39 @@
 		margin-bottom: 0;
 	}
 }
+
+@media (max-width: 1024px) {
+	.details {
+		&__list {
+			gap: 50px;
+		}
+		&__item {
+			grid-column: 6 span;
+		}
+		&__icon {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.details {
+		&__list {
+			gap: 20px;
+		}
+		&__item {
+			grid-column: 6 span;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.details {
+		&__list {
+			column-gap: 0;
+		}
+		&__item {
+			grid-column: 12 span;
+		}
+	}
+}

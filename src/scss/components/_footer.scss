@@ -31,6 +31,7 @@
 		font-weight: 300;
 		font-size: 12px;
 		line-height: 150%;
+		cursor: pointer;
 		&-title {
 			color: var(--white-color);
 			font-weight: 600;
@@ -64,6 +65,138 @@
 		}
 		&-right {
 			display: flex;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.footer {
+		&__social {
+			margin-right: 28px;
+			flex-direction: column;
+		}
+		&__logo {
+			margin-right: 30px;
+		}
+		&__list {
+			&:first-child {
+				margin-right: 30px;
+			}
+			&:last-child {
+				margin-left: 53px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.footer {
+		&__container {
+			flex-direction: column;
+		}
+		&__social {
+			margin-right: 78px;
+		}
+		&__logo {
+			margin-right: 0;
+		}
+		&__list {
+			&:first-child {
+				margin-right: 80px;
+			}
+			&:last-child {
+				margin-left: 73px;
+			}
+		}
+		&__side {
+			&-left {
+				margin-bottom: 48px;
+				justify-content: space-evenly;
+			}
+			&-right {
+				justify-content: space-evenly;
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.footer {
+		&__social {
+			margin-right: 28px;
+			flex-direction: column;
+		}
+		&__logo {
+			margin-right: 30px;
+		}
+		&__list {
+			&:first-child {
+				margin-right: 30px;
+			}
+			&:last-child {
+				margin-left: 53px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.footer {
+		&__side {
+			&-left {
+				justify-content: space-between;
+			}
+			&-right {
+				justify-content: flex-end;
+			}
+		}
+		&__menu {
+			display: flex;
+			flex-direction: column;
+		}
+		&__list {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			&:first-child {
+				margin-right: 0;
+			}
+			&:last-child {
+				margin-left: 0;
+			}
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+			& .footer__item {
+				&:not(:last-child) {
+					margin-bottom: 0;
+					margin-right: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		&__side {
+			&-left {
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 24px;
+			}
+			&-right {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		&__logo {
+			margin-right: 0;
+			margin-bottom: 12px;
+		}
+		&__social {
+			flex-direction: row;
+			margin-bottom: 12px;
 		}
 	}
 }
