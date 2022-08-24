@@ -20,6 +20,11 @@
 		&:last-child {
 			margin-left: 73px;
 		}
+		& .footer__item {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
 	}
 	&__item {
 		color: var(--footer-item-color);
@@ -36,22 +41,29 @@
 	&__social {
 		display: flex;
 		flex-wrap: wrap;
+		margin-right: 78px;
 	}
 	&__icon {
-		&-top {
-			stroke: var(--black-color);
-			fill: var(--footer-icon-color);
-			width: 40px;
-			height: 40px;
-			&:first-child {
-				margin-left: 12px;
-			}
-			&:not(:last-child) {
-				margin-right: 8px;
-			}
+		stroke: var(--black-color);
+		fill: var(--footer-icon-color);
+		width: 40px;
+		height: 40px;
+		&:first-child {
+			margin-left: 12px;
 		}
-		&-bottom {
-			stroke: var(--footer-icon-color);
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
+	&__logo {
+		margin-right: 150px;
+	}
+	&__side {
+		&-left {
+			display: flex;
+		}
+		&-right {
+			display: flex;
 		}
 	}
 }
